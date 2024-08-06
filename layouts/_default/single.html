@@ -61,10 +61,12 @@
 
   {{/* Page content */}}
 
-  <div class="single-content">
-    {{ .Content }}
+<div class="single-content">
+  {{ .Content }}
+  {{ if not (eq .Type "b.io") }}
     {{ partial "comments.html" . }}
-  </div>
+  {{ end }}
+</div>
 
   {{/* Next prev controls */}}
 
