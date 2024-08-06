@@ -418,6 +418,16 @@ footer a {
   max-width: 100vw !important;
 }
 
+.img-pfp div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+img-pfp img {
+  scale: 25%;
+}
+
 .caption-container {
   display: flex;
   justify-content: center;
