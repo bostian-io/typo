@@ -419,13 +419,16 @@ footer a {
 }
 
 .img-pfp div {
-  display: flex;
-  align-items: center;
-  justify-content: left;
+  display: block;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .img-pfp img {
+  display: block;
   scale: 25%;
+  margin: 0;
 }
 
 .caption-container {
