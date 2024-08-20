@@ -12,7 +12,7 @@
         {{ with site.Params.menu }}
         {{ range . }}
         <p class="small {{ if eq .name (lower $currentPage.Name) }} bold {{end}}">
-            <a href="{{.url}}">
+            <a href="{{.url}}" {{ if or (eq .name "vault") (not (strings.HasPrefix .url "/")) }}target="_blank"{{ end }}>
                 /{{.name }}
             </a>
         </p>
